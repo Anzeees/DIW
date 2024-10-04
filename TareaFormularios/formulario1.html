@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREA DE FORMULARIOS VIERNES 4</title>
+    <style>
+        #uno {
+            background-color: rgb(168, 48, 227);
+        }
+
+        #dos {
+            background-color: rgb(96, 96, 212);
+        }
+
+        #tres {
+            background-color: rgb(2, 117, 2);
+        }
+
+        legend{
+            background-color: white;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h3>INFORMACIÓN DE ACCESO A</h3>
+    <h3>LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h3>
+    <form>
+        <fieldset id="uno">
+            <legend>Datos Personales</legend>
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Apellidos:</td>
+                    <td>DNI</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nombre" id="nombre"></td>
+                    <td><input type="text" name="apellidos" id="apellidos"></td>
+                    <td><input type="text" name="dni" id="dni"></td>
+                </tr>
+                <tr>
+                    <td>Lugar de Nacimiento</td>
+                    <td>Provincia:</td>
+                    <td>Fecha de Nacimiento:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="lnacimiento" id="lnacimiento"></td>
+                    <td><select name="provincia" id="provincia">
+                        <option value="Cáceres">Cáceres</option>
+                        <option value="Badajoz">Badajoz</option>
+                    </select></td>
+                    <td><input type="date" name="fnacimiento" id="fnacimiento"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Direccion:</td>
+                    <td>Código Postal:</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="direccion" id="direccion"></td>
+                    <td><input type="text" name="cpostal" id="cpostal"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="dos">
+            <legend>Forma de Acceso</legend>
+            <input type="radio" name="facceso" id="directo" value="directo">
+            <label for="directo">Directo</label><br>
+            <input type="radio" name="fdirecto" id="bachillerato" value="bachillerato">
+            &emsp;<label for="bachillerato">Bachillerato </label><input type="text" name="bachiller" id="bachiller"><br>
+            &emsp;<input type="radio" name="fdirecto" id="universidad" value="universidad">
+            <label for="universidad">Universidad </label><input type="text" name="uni" id="uni"><br>
+            &emsp;<input type="radio" name="fdirecto" id="gradiomedio" value="gradiomedio">
+            <label for="gradiomedio">Grado Medio </label><input type="text" name="gmedio" id="gmedio"><br>
+            &emsp;<input type="radio" name="fdirecto" id="otros" value="otros">
+            <label for="otros">Otros (especifique) </label><input type="text" name="otro" id="otro"><br>
+            <input type="radio" name="facceso" id="plibre" value="plibre">
+            <label for="plibre">Prueba Libre</label><br>
+        </fieldset>
+        <fieldset id="tres">
+            <legend>Documentos Adjuntados</legend>
+            <input type="checkbox" id="fotodni" name="fontodni" value="fotocopiadni">
+            <label for="fotodni"> Fotocopia DNI</label>
+            <input type="checkbox" id="certificado" name="certificado" value="certificado">
+            <label for="certificado"> Certifica Académico</label><br>
+            <input type="checkbox" id="otrosd" name="otrosd" value="otrosdocumentos">
+            <label for="otrosd"> Otros documentos (especifique)</label><br>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
