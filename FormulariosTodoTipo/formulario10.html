@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 10</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <p>Nombre <input type="text" name="nombre" id="nombre" placeholder="nombre" required></p>
+        <p>Email <input type="email" name="mail" id="mail" placeholder="mail" required></p>
+        <p>Teléfono <input type="tel" name="telefono" id="telefono" placeholder="Su teléfono"></p>
+
+        <fieldset>
+            <legend>Lenguajes que conoce</legend>
+            <table>
+                <tr>
+                    <td>Javascript</td>
+                    <td><input type="checkbox" name="javascript" id="javascript" checked></td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td><input type="checkbox" name="php" id="php"></td>
+                </tr>
+                <tr>
+                    <td>NodeJs</td>
+                    <td><input type="checkbox" name="nodejs" id="nodejs"></td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td><input type="checkbox" name="python" id="python"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <p>Nivel de Inglés</p>
+        <table>
+            <tr>
+                <td>Bajo</td>
+                <td><input type="radio" name="level" id="bajo"></td>
+            </tr>
+            <tr>
+                <td>Medio</td>
+                <td><input type="radio" name="level" id="medio"></td>
+            </tr>
+            <tr>
+                <td>Alto</td>
+                <td><input type="radio" name="level" id="alto"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

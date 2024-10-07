@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULARIO 1</title>
+    <title>FORMULARIO 9</title>
 </head>
 <body>
-    <form action="procesar.php" method="post">
-        <p>Usuario</p>
-        <input type="text" name="usuario" id="usuario">
-        <p>Contraseña</p>
-        <input type="password" name="contra" id="contra">
+    <form action="procesar.php" method="get">
+        <p>Número de botellas (en lotes de 3)</p>
+        <input type="number" name="cantidad" id="cantidad" min="3" step="3">
         <br>
         <br>
         <input type="submit" value="Enviar">
