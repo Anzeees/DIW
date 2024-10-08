@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 2</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <p><label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" maxlength="40" required></p>
+        <p><label for="apellidos">Apellidos:</label><input type="text" name="apellidos" id="apellidos" maxlength="60" required></p>
+        <p><label for="edad">Edad:</label><input type="number" name="edad" id="edad" pattern="[18-90]"></p>
+        <p><label for="mail">Email:</label><input type="email" name="mail" id="mail" required></p>
+        <p><label for="genero">Género</label>
+            <select name="genero" id="genero" required>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+            </select>
+        </p>
+        <p><input type="checkbox" name="macbook" id="macbook"><label for="macbook">Macbook</label></p>
+        <p><input type="checkbox" name="iphone" id="iphone"><label for="iphone">Iphone</label></p>
+        <p><input type="checkbox" name="ipad" id="ipad"><label for="ipad">Ipad</label></p>
+        <p><label for="conocer">¿Como nos conocistes?</label>
+            <select name="conocer" id="conocer">
+                <option value="rs">Red Social</option>
+                <option value="buscador" selected>Buscador</option>
+                <option value="amigos">Amigos</option>
+                <option value="otros">Otros</option>
+            </select>
+        </p>
+        <p><input type="checkbox" name="lista" id="lista"><label for="lista">&emsp;Deseo subscribirme a la lista de correo</label></p>
+        <input type="submit" value="Contactar">
+    </form> 
+</body>
+</html>

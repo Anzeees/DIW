@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 3</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Datos Personales:</legend>
+            <p><label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" pattern="^[A-Z][a-z]+$"></p>
+            <p><label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido" pattern="^[A-Z][a-z]+$"></p>
+            <p><label for="club">¿Eres miembro de un club?</label>
+                <select name="club" id="club">
+                    <option value="si" selected>Si</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+            <p><label for="mail">Correo electrónico</label><input type="email" name="mail" id="mail"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos del deporte</legend>
+            <label for="deporte">Elige deporte:</label>
+            <select name="deporte" id="deporte">
+                <option value="paddle">Paddle</option>
+                <option value="squash">Squash</option>
+                <option value="tenis">Tenis</option>
+            </select>
+            <p><label for="freserva">Fecha y hora reserva:</label><input type="datetime" name="freserva" id="freserva"></p>
+            <p><input type="checkbox" name="normas" id="normas"><label for="normas">Acepto las normas del club</label></p>
+            <p style="text-align: center;"><input type="button" value="Enviar"></p>
+        </fieldset>
+    </form>
+</body>
+</html>

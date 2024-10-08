@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 4</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <p><label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre"></p>
+        <p><label for="apellidos">Apellidos:</label><input type="text" name="apellidos" id="apellidos"></p>
+        <p><label for="telefono">Teléfono</label><input type="tel" name="telefono" id="telefono" pattern="\d{3} \d{2} \d{2} \d{2}" placeholder="xxx xx xx xx"></p>
+        <p><label for="contra">Contraseña:</label><input type="password" name="contra" id="contra" minlength="8"></p>
+        <p><label for="fnacimiento">Fecha de nacimiento:</label><input type="date" name="fnacimiento" id="fnacimiento"></p>
+        <p><input type="checkbox" name="acepto" id="acepto"><label for="acepto">Acepto los terminos de protección de datos</label></p>
+        <p style="text-align: center;"><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
