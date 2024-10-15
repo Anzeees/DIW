@@ -6,6 +6,16 @@
     <title>FORMULARIO 5</title>
 </head>
 <body>
-    
+    <h1>Envia tu foto de receta</h1>
+    <form action="procesar.php" method="post">
+        <label for="receta">Receta:</label><input type="text" name="receta" id="receta" maxlength="80" required>
+        <label for="tipo">Tipo de receta</label><select name="tipo" id="tipo">
+            <option value="carne">Carne</option>
+            <option value="pescado">Pescado</option>
+            <option value="fruta">Fruta</option>
+        </select>
+        <label for="imagen">Seleccionar Imagen</label><input type="file" name="imagen" id="imagen" accept="*.png" required>
+        <p style="text-align:center;"><input type="submit" value="Enviar"></p>
+    </form>
 </body>
 </html>

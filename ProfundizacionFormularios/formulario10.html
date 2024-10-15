@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO 10</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <label for="palabra">Palabra Clave: </label><input type="text" name="palabra" id="palabra" required>
+        <label for="categoria">Categoria: </label><select name="categoria" id="categoria">
+            <option value="todas">Todas</option>
+            <option value="etrectronica">Electrónica</option>
+            <option value="ropa">Ropa</option>
+            <option value="hogar">Hogar</option>
+        </select>
+        <label for="preciomin">Precio mínimo</label><input type="number" name="preciomin" id="preciomin">
+        <label for="preciomax">Precio máximo</label><input type="number" name="preciomax" id="preciomax">
+        <label for="ordenar">Ordenar por:</label><select name="ordenar" id="ordenar">
+            <option value="relevancia">Relevancia</option>
+            <option value="precio">Precio</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
