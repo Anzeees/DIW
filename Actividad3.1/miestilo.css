@@ -1,4 +1,11 @@
+body {
+    background-color: lightcyan;
+}
 h1{
     margin: 30px;
     color: navy;
 }
+
+p {
+    color: red;
+    }
