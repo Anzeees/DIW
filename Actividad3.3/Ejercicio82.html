@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Clases</title>
+    <style>
+        /* El ancho de la tabla es el minimo para que quepa todo el contenido */
+        .a { table-layout: auto; }
+        /* El ancho de la tabla ocupa el 100% del ancho */
+        .b { table-layout: auto; width: 100%; }
+        /* El ancho de la tabla es fijo en 200px */
+        .c { table-layout: fixed; width: 200px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tablas de Clases</h1>
+    </header>
+    
+    <main>
+        <section>
+            <table class="a">
+                <caption>Clase A</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Grado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alicia</td>
+                        <td>12</td>
+                        <td>7°</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>11</td>
+                        <td>6°</td>
+                    </tr>
+                    <tr>
+                        <td>Laura</td>
+                        <td>13</td>
+                        <td>8°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <table class="b">
+                <caption>Clase B</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Grado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>12</td>
+                        <td>7°</td>
+                    </tr>
+                    <tr>
+                        <td>Lucía</td>
+                        <td>11</td>
+                        <td>6°</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>13</td>
+                        <td>8°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <section>
+        <table class="c">
+            <caption>Clase C</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Grado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alicia</td>
+                    <td>12</td>
+                    <td>7°</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>11</td>
+                    <td>6°</td>
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td>13</td>
+                    <td>8°</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tablas de Clases</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Clases</title>
+    <style>
+        /* El borde es separado y hay un espaciado de 50px izq y drch y 10px arriba y abajo */
+        .a { border-collapse: separate; border-spacing: 50px 10px;}
+        /* No pasa nado porque solo funciona si el borde es separate */
+        .b { border-collapse: collapse; border-spacing: 40px;}
+        /* Es lo mismo que border collapse */
+        .c { border-spacing: 0;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tablas de Clases</h1>
+    </header>
+    
+    <main>
+        <section>
+            <table class="a">
+                <caption>Clase A</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Grado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alicia</td>
+                        <td>12</td>
+                        <td>7°</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>11</td>
+                        <td>6°</td>
+                    </tr>
+                    <tr>
+                        <td>Laura</td>
+                        <td>13</td>
+                        <td>8°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <table class="b">
+                <caption>Clase B</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Grado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>12</td>
+                        <td>7°</td>
+                    </tr>
+                    <tr>
+                        <td>Lucía</td>
+                        <td>11</td>
+                        <td>6°</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>13</td>
+                        <td>8°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <section>
+        <table class="c">
+            <caption>Clase C</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Grado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alicia</td>
+                    <td>12</td>
+                    <td>7°</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>11</td>
+                    <td>6°</td>
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td>13</td>
+                    <td>8°</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tablas de Clases</p>
+    </footer>
+</body>
+</html>
