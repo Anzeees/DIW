@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HORARIO</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th {
+            border: black 1px solid;
+            border-collapse: collapse;
+        }
+
+        td:first-child {
+            background-color: green;
+        }
+
+        tr:nth-child(4) td:nth-child(2){
+            background-color: yellow;
+        }
+        
+        a {
+           text-decoration: none;
+           color: green; 
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        td:last-child:hover,th:last-child:hover{
+            font-size: 2em;
+        }
+
+        th::first-letter{
+            font-size: 2em;
+        }
+
+        #mail{
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <table>
         <caption>HORARIO DE CLASE CURSO 2018-2019</caption>
         <tr>
-            <td>Horas</td>
-            <td>Lunes</td>
-            <td>Martes</td>
-            <td>Miércoles</td>
-            <td>Jueves</td>
-            <td>Viernes</td>
+            <th>HORAS</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
         </tr>
         <tr>
             <td>8:00</td>
@@ -50,5 +89,9 @@
             <td>Inglés</td>
         </tr>
     </table>
+    <form action="" method="post">
+        <p><label for="mail">Email* </label><input type="email" name="mail" id="mail" placeholder="Inserte email del destinatario" required></p>
+        <input type="submit" value="Enviar Horario">
+    </form>
 </body>
 </html>
