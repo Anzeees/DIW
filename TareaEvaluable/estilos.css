@@ -1,0 +1,16 @@
+body {
+    background-color: #f2bb16;
+}
+
+.encabezado {
+    display: flex;
+    max-height: 150px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.titulo {
+    width: 85%;
+}
