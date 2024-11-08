@@ -1,4 +1,6 @@
 * {
+    /* La linea de borde la usamos para hacer pruebas
+    y ver donde estan los bordes de todos los contenedores */
     /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0;
@@ -26,12 +28,8 @@ header {
 }
 
 .titular {
-    /* border: 1px solid red; */
     display: flex;
-    /* Usar contenido manera flexible */
     justify-content: space-around;
-    /* Separacion alrededor de los items */
-
 }
 
 .titular img {
@@ -113,12 +111,25 @@ article {
     width: 150px;
     height: 100px;
     margin: 10px auto;
+    display: flex;
 }
 
 .imagencuadrada {
     width: 100px;
     height: 100px;
     margin: 10px auto;
+    display: flex;
+}
+
+.contenido .imagencuadrada {
+    float: left;
+    margin: 0 5px;
+}
+
+article aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -127,9 +138,4 @@ footer {
     background-color: #d9d3b8;
     border-radius: 7px;
     border: 1px solid black;
-}
-
-.contenido .imagencuadrada {
-    float: left;
-    margin: 0 5px;
 }
