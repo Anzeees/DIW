@@ -7,7 +7,11 @@
     padding: 0;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Lilita One", sans-serif;
 }
 
@@ -66,12 +70,19 @@ nav a {
 }
 
 nav a:hover {
-    color: red;
+    color: rgb(4, 100, 20);
+    text-shadow: 2px 2px 3px gray;
 }
 
-nav a.casa {
-    float: left;
+nav div {
+    margin: 6px;
+    /* box-shadow: 5px 5px gray; */
+    filter: drop-shadow(3px 3px 1px gray);
 }
+
+/* nav a.casa {
+    float: left;
+} */
 
 main {
     display: flex;
@@ -79,14 +90,14 @@ main {
     flex: 1;
 }
 
-main > * {
+main>* {
     border: 1px solid black;
     border-radius: 6px;
     background-color: #d9d3b8;
 }
 
 aside {
-    width: 30%;
+    width: 25%;
 }
 
 .galeria {
@@ -95,12 +106,12 @@ aside {
 
 article {
     display: flex;
-    width: 60%;
+    width: 65%;
     justify-content: space-around;
 }
 
 .textoart {
-    width: 60%;
+    width: 75%;
 }
 
 .textoart * {
@@ -108,15 +119,15 @@ article {
 }
 
 .imagen {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     margin: 10px auto;
     display: flex;
 }
 
 .imagencuadrada {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 10px auto;
     display: flex;
 }
@@ -133,7 +144,7 @@ article aside {
 }
 
 footer {
-    margin: 2% ;
+    margin: 2%;
     padding: 15px;
     background-color: #d9d3b8;
     border-radius: 7px;
