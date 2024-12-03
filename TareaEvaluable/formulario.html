@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estiloscompra.css">
+    <link rel="stylesheet" href="estilosformulario.css">
 </head>
 
 <body>
@@ -31,41 +31,30 @@
         <nav>
             <a href="index.html" class="casa"><img src="image/casa-silueta-negra-sin-puerta.png" alt="Inicio"></a>
             <a href="compra.html">Compra nuestros productos</a>
-            <a href="formulario.html">Contacta con nosotros</a>
+            <!-- <a href="formulario.html">Contacta con nosotros</a> -->
         </nav>
     </header>
     <main>
         <article>
-            <div class="producto">
-                <img src="image/miel.jpg">
-                <h5>MIEL</h5>
-                <button>Añadir</button>
-            </div>
-            <div class="producto">
-                <img src="image/cera.jpeg">
-                <h5>CERA</h5>
-                <button>Añadir</button>
-            </div>
-            <div class="producto">
-                <img src="image/jalea.jpg">
-                <h5>JALEA REAL</h5>
-                <button>Añadir</button>
-            </div>
-            <div class="producto">
-                <img src="image/propoleo.jpg">
-                <h5>PROPÓLEO</h5>
-                <button>Añadir</button>
-            </div>
-            <div class="producto">
-                <img src="image/veneno.jpg">
-                <h5>VENENO</h5>
-                <button>Añadir</button>
-            </div>
-            <div class="producto">
-                <img src="image/hidromiel.jpg">
-                <h5>HIDROMIEL</h5>
-                <button>Añadir</button>
-            </div>
+            <form action="" method="get">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" required><br>
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="APELLIDOS" required><br>
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" name="correo" id="correo" placeholder="CORREO" required><br>
+                <label for="consulta">Tipo de consulta</label><br>
+                <select name="consulta" id="consulta">
+                    <option value="compra">COMPRA</option>
+                    <option value="otro">OTRO...</option>
+                </select><br>
+                <label for="texto">Texto</label><br>
+                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="¿Cual es te consulta?" required></textarea><br><br>
+                <div class="columnaenviar">
+                    <input type="submit" value="Enviar" class="botones">
+                    <input type="reset" value="Borrar" class="botones">
+                </div>
+            </form>
         </article>
     </main>
     <footer>
